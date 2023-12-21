@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="task5.css">
+  <script src="task5.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h2 class="h2">Address Book</h2>
+  <div class="navbar">
+      <div>
+      <ul class="ul">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#" onclick="enterdetails() ">+ADD</a></li>
+      </ul>
+    </div>
+      <div class="blog"> <img src="blog-icon.png"></div>
+    
+  </div>
+
+
+
+  <h3 class="h3">CONTACTS</h3>
+  <div>
+    <div>
+      <ul class="unorder" id="unorder">
+
+      </ul>
+    </div>
+
+
+
+    <div class="details" id="details">
+      <div class="userdetails" >
+      <div class="namediv">
+        <div>
+          <h2 class="NAME" id="nameshead"> </h2>
+        </div>
+        <div>
+          <ul class="imagediv">
+            <li class="list1"><a href="#"><img src="Edit-icon.png" class="image1"> <span>EDIT</span></a> </li>
+            <li ><a href="#" onclick="deleteDetails()"><img src="delete1.png" class="image2"><span>DELETE</span></a> </li>
+          </ul>
+        </div>
+      </div>
+
+
+      
+         <span class="CLASS"><label >Email: </label><div  class ="EMAIL"></div> </span>
+
+         <span class="CLASS"><label >MOBILE: </label><div  class ="MOBILE"></div></span>
+
+         <span class="CLASS"><label >LANDLINE: </label><div  class ="LANDLINE"></div></span>
+
+         <span  class="CLASS"><label >WEDSITE: </label><div  class ="WEDSITE"></div></span>
+
+         <span  class="CLASS"><label >ADDRESS: </label><div  class ="ADDRESS"></div></span>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div id="iframediv" class="iframediv">
+    <form id="formData">
+      <div class="padding1">
+        <lable>Name</lable>
+        <div class="displayflex">
+          <input type="text" id="Name" class="input">
+
+        </div>
+      </div>
+      <div class="padding1">
+        <lable class="lable"> Email</lable>
+        <div class="displayflex">
+          <input type="text" class="input" id="Email">
+
+        </div>
+      </div>
+
+      <div class="display">
+        <div class="mobile">
+          <label>Mobile</label>
+          <div class="displayflex">
+            <input type="text" class="moblieinput" id="Phone">
+
+          </div>
+        </div>
+        <div>
+          <label>Landline</label>
+          <div><input type="text" class="moblieinput" id="Landline"></div>
+        </div>
+      </div>
+
+      <div class="padding1">
+        <lable>Website</lable>
+        <div class="displayflex">
+          <input type="text" class="input" id="WebSite">
+        </div>
+      </div>
+      <div class="padding1">
+        <label> Address</label>
+        <div class="displayflex">
+          <input type="text" class="inputaddress" id="Address">
+        </div>
+      </div>
+
+      <div><button class="buttton" onclick="addDetails()" id="detailbutton">Add</button></div>
+    </form>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
