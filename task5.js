@@ -320,7 +320,7 @@ function display(namex)
 
  function deleteDetails()
  {
-    /*let existingData = JSON.parse(localStorage.getItem('userData'))||[];
+    let existingData = JSON.parse(localStorage.getItem('userData'))||[];
     var chandana=document.getElementById("nameshead").value;
     let indexToDelete = existingData.findIndex(item => item.newName === chandana);
     if (indexToDelete == -1)
@@ -335,7 +335,7 @@ function display(namex)
          useremailx[0].getElementsByClassName("WEDSITE")[0].innerText = "";
          useremailx[0].getElementsByClassName("ADDRESS")[0].innerText = "";
     }
-      console.log(indexToDelete);*/
+      console.log(indexToDelete);
     var ul =document.getElementById("unorder");
     var candidate=document.getElementById("");
     var item =document.getElementById(candidate.value);
